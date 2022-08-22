@@ -1,1 +1,0 @@
-{"uuid":"b78dc56b-887c-48d2-b1c9-6c89601d9cc4","name":"Scenario: user create magazine","children":["852aa4c2-3cd1-437b-be54-be4232df4616"],"befores":[],"afters":[{"name":"stepDefinitions.Hooks.AfterScenario()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1655178140397,"stop":1655178140776}],"start":1655178083865,"stop":1655178140777}

@@ -18,4 +18,4 @@ Feature: User Login
     Then login successfully and validation of page title
     Examples:
       |    Phone     | FbPassword  |
-      | phone number |  password   |
+      | 01647302338  |  30453@shmm  |

@@ -11,19 +11,32 @@ import pages.Website.Website;
 public class PageObjectManager {
 
     public WebDriver driver;
+
     public PageObjectManager(WebDriver driver) {
         this.driver = driver;
     }
-    public Website website(){return new Website(driver);}
-    public DownloadPage download(){
+
+    public Website website() {
+        return new Website(driver);
+    }
+
+    public DownloadPage download() {
         return new DownloadPage(driver);
     }
-    public HomePage homePage(){return new HomePage(driver);}
-    public LoginPage logIn(){
+
+    public HomePage homePage() {
+        return new HomePage(driver);
+    }
+
+    public LoginPage logIn() {
         return new LoginPage(driver);
     }
-    public PostPage postPage(){return new PostPage(driver);}
-    public SignupPage signUp(){
+
+    public PostPage postPage() {
+        return new PostPage(driver);
+    }
+
+    public SignupPage signUp() {
         return new SignupPage(driver);
     }
 }

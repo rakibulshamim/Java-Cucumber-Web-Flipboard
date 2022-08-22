@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Website {
     public static WebDriver driver;
+
     public Website(WebDriver driver) {
         Website.driver = driver;
     }

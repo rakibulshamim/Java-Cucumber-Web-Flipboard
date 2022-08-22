@@ -10,6 +10,7 @@ import java.time.Duration;
 
 public class DownloadPage {
     public static WebDriver driver;
+
     public DownloadPage(WebDriver driver) {
         DownloadPage.driver = driver;
     }
@@ -18,19 +19,22 @@ public class DownloadPage {
     By hrefIOS = By.xpath("//li[@id='menu-item-18257']");
     By hrefAndroid = By.xpath("//li[@id='menu-item-18250']");
 
-    public WebElement tools(){
+    public WebElement tools() {
         return driver.findElement(hrefTools);
     }
+
     public WebElement availableOniOS() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(hrefIOS));
         return driver.findElement(hrefIOS);
     }
-    public WebElement availableOnAndroid(){
+
+    public WebElement availableOnAndroid() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(hrefAndroid));
         return driver.findElement(hrefAndroid);
     }
+
     public static String getPageTitle() {
         return driver.getTitle();
     }

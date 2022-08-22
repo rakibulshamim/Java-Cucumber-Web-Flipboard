@@ -7,6 +7,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestBase {
@@ -26,8 +27,11 @@ public class TestBase {
 		{
 			if(browser.equalsIgnoreCase("chrome"))
 			{
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//chromedriver.exe");
-		driver = new ChromeDriver();
+				System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//chromedriver.exe");
+//				driver = new ChromeDriver();
+				ChromeOptions chromeOptions = new ChromeOptions();
+//				chromeOptions.addArguments("--headless");
+				driver=new ChromeDriver(chromeOptions);
 			}
 			if(browser.equalsIgnoreCase("firefox"))
 			{

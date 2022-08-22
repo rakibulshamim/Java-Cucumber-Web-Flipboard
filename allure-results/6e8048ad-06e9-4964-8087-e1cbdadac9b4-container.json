@@ -1,1 +1,0 @@
-{"uuid":"6e8048ad-06e9-4964-8087-e1cbdadac9b4","name":"Scenario: user visit profile page","children":["f66fee43-a70d-4257-a8e5-bda6db503d43"],"befores":[],"afters":[{"name":"stepDefinitions.Hooks.AfterScenario()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1655178598826,"stop":1655178599089}],"start":1655178548677,"stop":1655178599089}

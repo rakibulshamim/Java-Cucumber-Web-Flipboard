@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Java_Cucumber_Parallel_And_Allure" />
         <module name="Java_Cucumber_Pararell_Multithread_And_Allure-master" />
+        <module name="Java_Cucumber_Flipboard" />
       </profile>
     </annotationProcessing>
   </component>

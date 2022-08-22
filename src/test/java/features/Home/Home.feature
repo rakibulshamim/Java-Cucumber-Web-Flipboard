@@ -7,22 +7,20 @@ Feature: Exploring Flipboard Home Features
     Then click on login button
 
 
-  Scenario: check For You href visible
-    Given verify For You href visible
+  Scenario: Check that For You page is visible
+    Given click on For You
+    Then verify that For You page is visible
 
 
-  Scenario: visit The Daily Edition page
+  Scenario: Check that The Daily Edition page is visible
     Given click on The Daily Edition
-    Then user redirect to The Daily Edition page and verify page title
+    Then verify that The Daily Edition page is visible
 
-  Scenario: user visit Entertainment page
-    Given click on avatar icon
-    When click on profile page
-    And click on entertainment image
-    Then user redirect to entertainment page and verify page title
 
-  Scenario: personalize favorite news topics
+  Scenario: Check that user can personalize favorite news topics
     Given click on personalize icon
-    When user select favorite topic from list
-    Then click on save button
-    And  popup close automatically and redirect to home page
+    When verify that personalize tab is open
+    And user select favorite topic from list
+    And click on save button
+#    And click on confirm save button
+    Then verify that followed or unfollowed notification popup is displayed properly

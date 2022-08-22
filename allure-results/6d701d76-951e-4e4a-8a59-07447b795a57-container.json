@@ -1,1 +1,0 @@
-{"uuid":"6d701d76-951e-4e4a-8a59-07447b795a57","name":"Scenario: user report content","children":["a5d32d84-4499-4eea-bad9-9abc60def76c"],"befores":[],"afters":[{"name":"stepDefinitions.Hooks.AfterScenario()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1655178491785,"stop":1655178492084}],"start":1655178429050,"stop":1655178492084}
